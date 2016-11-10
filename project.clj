@@ -1,4 +1,4 @@
-(defproject ring/ring-problem "0.1.0-SNAPSHOT"
+(defproject jmorton/ring-problem "0.1.0-SNAPSHOT"
   :description "Ring Middleware - Problem Details for HTTP APIs (RFC 7807)"
   :url "http://github.com/jmorton/ring-problem"
   :license {:name "Eclipse Public License"
