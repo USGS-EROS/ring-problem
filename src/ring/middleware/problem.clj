@@ -61,7 +61,7 @@
        (into {})))
 
 (defmacro defproblems
-  "Create `Problem` for for given problem-specs bound to name."
+  "Create `Problem` for given problem-specs bound to name."
   [name problem-specs]
   `(def ~name (make-problems ~problem-specs)))
 
@@ -90,8 +90,7 @@
        (let [response (handler request)]
          response)
        (catch java.lang.RuntimeException ex
-         (print-stack-trace ex)
          (-> ex
              (problem)
-             (transform)
+             (transform request)
              (as-json)))))))
